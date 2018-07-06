@@ -615,7 +615,7 @@ cdef class Class:
         # computes the size, given the number of correlations needed to be computed
         size = (self.sp.d_size*(self.sp.d_size+1)-(self.sp.d_size-self.sp.non_diag)*
                 (self.sp.d_size-1-self.sp.non_diag))/2;
-        for elem in ['dd', 'll', 'dl']:
+        for elem in ['dd', 'll','dl']:
             if elem in spectra:
                 cl[elem] = {}
                 for index in range(size):
